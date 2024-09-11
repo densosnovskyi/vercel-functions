@@ -3,6 +3,7 @@ import { randomBytes } from "crypto";
 import { EID, JWKWallet, arDriveFactory } from "ardrive-core-js";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { promises as fsPromises } from "fs";
+import path from "path";
 
 import {
   ByteCount,
@@ -105,7 +106,7 @@ export default async function (req: VercelRequest, res: VercelResponse) {
 
   const form = formidable({
     keepExtensions: false,
-    uploadDir: undefined,
+    uploadDir: path.join('/tmp'),
     multiples: false,
   });
 
