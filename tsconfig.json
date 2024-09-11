@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node", // Standard Node.js module resolution
+    "target": "ES6", // Set target ECMAScript version
+    "module": "ESNext", // Use ESNext module system
+    "esModuleInterop": true, // Allow default import compatibility
+    "skipLibCheck": true, // Skip type checking for library files
+    "strict": true // Enable strict mode for type checking
+  },
+  "include": [
+    "src/**/*.ts",
+    "api/**/*.ts",
+    "utils/**/*.ts",
+  ]
+}
